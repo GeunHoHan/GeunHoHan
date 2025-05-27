@@ -12,8 +12,8 @@ ul {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5열로 나열 */
-  gap: 20px; /* 칸 사이 간격 */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
 }
 
 li {
@@ -24,7 +24,6 @@ li {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* 입력 폼 */
 form input,
 form textarea,
 form select {
@@ -37,7 +36,6 @@ button {
   padding: 5px 10px;
 }
 
-/* 메뉴 이미지 스타일 */
 li img {
   width: 100%;
   height: auto;
