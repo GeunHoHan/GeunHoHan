@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5열로 나열 */
+  gap: 20px; /* 칸 사이 간격 */
+}
+
+li {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 입력 폼 */
+form input,
+form textarea,
+form select {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+}
+
+/* 메뉴 이미지 스타일 */
+li img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  display: block;
+  margin: 0 auto 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+li button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+li button:hover {
+  background-color: #ddd;
+}

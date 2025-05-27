@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>리뷰 작성</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="menu-title">리뷰: 메뉴 이름</h1>
+  <img id="menu-image" alt="메뉴 이미지" style="max-width: 150px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"><br>
+
+  <form id="review-form">
+    <input type="text" id="nickname" placeholder="닉네임" required><br>
+    <textarea id="content" placeholder="리뷰 내용" required></textarea><br>
+    <label>별점:
+      <select id="rating">
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★☆</option>
+        <option value="3">★★★☆☆</option>
+        <option value="2">★★☆☆☆</option>
+        <option value="1">★☆☆☆☆</option>
+      </select>
+    </label><br>
+    <button type="submit">리뷰 등록</button>
+  </form>
+
+  <h2>리뷰 목록</h2>
+  <ul id="review-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
