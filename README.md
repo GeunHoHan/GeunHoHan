@@ -1,4 +1,4 @@
-## Hi there 👋
+## zip 파일로 다운로드 받고 압축해제 후 index.html을 클릭하여 실행한다.
 
 <!--
 **GeunHoHan/GeunHoHan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
