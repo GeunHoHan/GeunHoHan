@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const sub = params.get('sub');
   const menuList = document.getElementById('menu-list');
 
-  // 메뉴 목록 페이지일 때
+  // 메뉴 목록 페이지
   if (document.URL.includes('menu.html')) {
     document.getElementById('restaurant-title').textContent = `${restaurant} 식당`;
 
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menuList.appendChild(li);
       });
     } else {
-      // 일반 메뉴 출력
+      // 일반 메뉴
       const key = sub ? `E4-${sub}` : restaurant;
       const items = menus[key] || [];
 
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuImage = document.getElementById('menu-image');
     menuImage.src = `images/${menu}.jpg`;
     menuImage.onerror = () => {
-      menuImage.src = 'images/default.jpg'; // 이미지가 없을 경우 기본 이미지
+      menuImage.src = 'images/default.jpg';
     };
 
     const reviewForm = document.getElementById('review-form');
